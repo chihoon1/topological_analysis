@@ -31,3 +31,4 @@ How to use the program:
 4. invoke function named metric_space_to_PHk_Xr to analyze data with persistent homology
 
 
+Algorithm is tested in persistent_homology_analysis.ipynb or in the main function of persistent_homology.py
