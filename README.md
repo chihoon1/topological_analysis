@@ -8,11 +8,11 @@ Persistent homology comprises of all homology Hk(Xr) for all k >= 0
 dimension of k-th homology Hk(Xr) indicates the number of independent k-dimensional holes in the topological space X (simplicial complex)
 
 k-dimension in simplicial complex
-0-dimension: a point
-1-dimension: a line segment
-2-dimension: a triangle
-3-dimension: a tetrahedron
-4-dimension: 5-cell
+1. 0-dimension: a point
+2. 1-dimension: a line segment
+3. 2-dimension: a triangle
+4. 3-dimension: a tetrahedron
+5. 4-dimension: 5-cell
 
 Here are the steps I took to compute the persistent homology:
 
