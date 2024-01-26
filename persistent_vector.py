@@ -17,7 +17,7 @@ def get_adjacency_matrix(X, **kwargs):
     # param: X is a data set
     # param: d is a distance metric function(taking two data points as parameters). default=euclidean
     # return an adjacency matrix (numpy 2d array) computed with a distance function d
-    d = kwargs('distance_function', euclidean_distance)  # distance function of a metric space
+    d = kwargs.get('distance_function', euclidean_distance)  # distance function of a metric space
     adjacency_matrix = np.zeros((len(X), len(X)))  # |X|*|X| matrix with dist(xi, xj) at the entry i,j
     # compute dist(xi,xj) where i != j
     for i in range(0, len(X)):
@@ -34,7 +34,7 @@ def metric_space_to_PersVecSpace(X, k=None, **kwargs):
     # default k=(ex. n-1 simplex (n=# of data points))
     # return a tuple with first elem representing ascending ordered finite set of r
     # and the second elem representing persistent vector space formed my Vietoris Rips Complex at each r
-    d = kwargs('distance_function', euclidean_distance)  # distance function of a metric space
+    d = kwargs.get('distance_function', euclidean_distance)  # distance function of a metric space
     if k is None: k = len(X)-1
     adjacency_matrix = get_adjacency_matrix(X, d=d)
     finite_set_r = sorted(set(adjacency_matrix.flatten()))  # finite set of distances in asceding order
