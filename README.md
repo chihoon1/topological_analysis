@@ -27,8 +27,9 @@ How to use the program:
 
 1. git clone https://github.com/chihoon1/topological_analysis.git  # install this git repo to local computer
 2. python -m venv venv  # set up virtual environment for python project
-3. pip install -r requirements.txt  # install all the library packages needed for persistent homology algorithm
-4. invoke function named metric_space_to_PHk_Xr to analyze data with persistent homology
+3. source venv/bin/active  # activate virtual environment
+4. pip install -r requirements.txt  # install all the library packages needed for persistent homology algorithm
+5. invoke function named metric_space_to_PHk_Xr to analyze data with persistent homology
 
 
 Algorithm is tested in persistent_homology_analysis.ipynb or in the main function of persistent_homology.py
